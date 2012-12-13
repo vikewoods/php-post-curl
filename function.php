@@ -1,12 +1,18 @@
 <?php
 
-public function SubmitForm($url='', $data=''){
+public function SubmitForm($url='http://alcomp.net.ua/notebooks', $data=''){
 
 	//Check for curl
 	if( function_exists('curl_exec') ){
 
-		$post_data['firstName'] = 'Name';
-		$post_data['action'] = 'Register';
+		for ($i=1; $i < 9; $i++) { 
+			$post_data['option'.$i.'_a[]'] = 'develop';
+		}
+		$post_data['order'] = 'ASC';
+		$post_data['sort'] = 'p.price';
+		$post_data['currency'] = 'UAH';
+		$post_data['route'] = 'product/category';
+		$post_data['actrion'] = 'submit';
 
 		foreach ( $post_data as $key => $value ) {
 		    $post_items[] = $key . '=' . $value;
