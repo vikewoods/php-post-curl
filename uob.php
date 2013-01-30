@@ -36,6 +36,7 @@ sleep(15);
 echo "\n\n";
 echo "Bank response:";
 echo "\n";
+sleep(47);
 echo "====================================================================\n";
 echo "ACCOUNT ON HOLD BY BANK AND VALID AND WILL BE CLOSED ON 17 March 2013\n";
 echo "====================================================================\n";
