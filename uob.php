@@ -7,7 +7,7 @@ $branch_code = "003";
 $bank_reference = "UOB-1242-X93";
 
 
-echo "Connnecting to UOB Server(202.42.213.5)...\n"
+echo "Connnecting to UOB Server(202.42.213.5)...\n";
 echo "\n\n\n\n";
 echo "Generating user salt(sha1): ".sha1(md5(rand(100, 89805980)));
 sleep(15);
@@ -20,7 +20,7 @@ echo "Bank reference:                     ". $bank_reference. "\n";
 echo "====================================================================\n";
 echo "\n\n";
 sleep(3);
-echo "Getting account data ..."
+echo "Getting account data ...";
 sleep(15);
 echo "\n\n";
 echo "";
